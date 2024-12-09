@@ -81,8 +81,8 @@ export const useFetchLLMResponse = () => {
   return useMutation(
     async (params: { prompt: string; models: string[] }) => {
       const apiKeys = {
-        huggingFace: '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', // Replace with your actual Hugging Face API key
-        gemini: 'AIzaSyD5nrU7BqcSFpIx4RcQ3Efs7eRHykLTZLg', // Your Gemini API key
+        huggingFace: '-', // Replace with your actual Hugging Face API key
+        gemini: '-', // Your Gemini API key
       };
 
       // Fetch responses from all selected models
