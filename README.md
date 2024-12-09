@@ -1,46 +1,12 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React + TypeScript application that allows users to compare multiple language models (e.g., GPT-4, GPT-3.5) side-by-side by selecting them from a dropdown and dynamically displaying their responses.
 
-## Available Scripts
+Features:
+Multi-Model Selection: Select multiple language models from a dropdown to compare their outputs.
+Dynamic Response Windows: Each model selected will have a corresponding response window displaying its output.
+API Calls with React Query: Fetch responses using a custom hook (useFetchLLMResponse) and React Query's useMutation for handling API requests.
+Preview Functionality: Preview responses from any model in a dedicated preview panel with the option to return to the comparison view.
+Real-Time UI Updates: The UI dynamically adds or removes model response windows as models are selected or deselected.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+API Integration:
+This project simulates fetching responses from different LLMs. The API call is managed through the useFetchLLMResponse hook, which dynamically fetches data based on user selections.
